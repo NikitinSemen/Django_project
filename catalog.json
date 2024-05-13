@@ -1,0 +1,36 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Продукты питания",
+      "description": "Пищевые продукты"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Сметана",
+      "description": "Сметана домашняя, жирность 20%",
+      "preview": "product/l38gs9qyun5kj2fvpi5ep27npeaza18o.webp",
+      "category": null,
+      "price": 200,
+      "created_at": "2024-05-12",
+      "updated_at": "2024-05-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Кетчуп томатный",
+      "description": "Кетчуп из помидор сорта \"слива\"",
+      "preview": "product/l38gs9qyun5kj2fvpi5ep27npeaza18o_IBP7uVk.webp",
+      "category": 1,
+      "price": 1520,
+      "created_at": "2024-05-12",
+      "updated_at": "2024-05-12"
+    }
+  }
+]
