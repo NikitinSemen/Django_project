@@ -22,7 +22,7 @@ class Command(BaseCommand):
         prod, electro, refreg = Category.objects.all()
 
         product = [
-            {'name': 'Творог обезжиреный', 'description': 'Творог жирностью 0.5%', 'category': prod, 'price': 120},
+            {'name': 'Творог обезжиреный', 'description': 'Творог жирностью 0.5%',  'category': prod, 'price': 120},
             {'name': 'LG 219d285', 'description': 'Диагональ 81см, блютуз поддержка, подключение к wifi',
              'category': electro, 'price': 21000},
             {'name': 'Hersun', 'description': 'Морозильник вместительный, серого цвета, оснащен четырьмя полками',
