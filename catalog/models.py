@@ -31,6 +31,10 @@ class Product(models.Model):
     price = models.IntegerField(null=False, verbose_name="Цена продукта")
     created_at = models.DateField(**NULLABLE)
     updated_at = models.DateField(**NULLABLE)
+    views_counter = models.PositiveIntegerField(
+        default=0,
+        verbose_name='Счетчик просмотров'
+    )
 
     class Meta:
         verbose_name = "Продукт"

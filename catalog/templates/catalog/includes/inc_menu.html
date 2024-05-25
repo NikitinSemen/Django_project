@@ -4,12 +4,15 @@
             <div class="col-sm-8 col-md-7 py-4">
                 <h4>"Десяточка"</h4>
                 <p class="text-body-secondary">Только лучшие товары от самых топовых поставщиков страны.
-                Оплата при доставке, картой на сайте, разбиение платеже на сплиты, кредитование от лучших банков.</p>
+                    Оплата при доставке, картой на сайте, разбиение платеже на сплиты, кредитование от лучших
+                    банков.</p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
                 <h4>Меню</h4>
                 <ul class="list-unstyled">
                     <li><a href="{% url 'catalog:products_list' %}" class="text-white">Главная</a></li>
+                    <li><a href="{% url 'catalog:product_create' %}" class="text-white">Добавить продукт в каталог</a>
+                    </li>
                 </ul>
             </div>
         </div>
