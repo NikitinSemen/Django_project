@@ -35,6 +35,7 @@ class Product(models.Model):
         default=0,
         verbose_name='Счетчик просмотров'
     )
+    slug = models.CharField(max_length=150, verbose_name='slug', **NULLABLE)
 
     class Meta:
         verbose_name = "Продукт"
@@ -43,25 +44,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class BlogPost(models.Model):
-    title = models.CharField(
-        max_length=200, verbose_name='Заголовок', help_text="Введите заголовок"
-    )
-    slug = models.CharField(max_length=150, verbose_name='slug', **NULLABLE)
-    content = models.TextField(verbose_name='Текст поста', help_text='Введите содержимое поста')
-    photo = models.ImageField(upload_to='blog/', verbose_name='фото', help_text='Вставьте фото')
-    created_at = models.DateField(**NULLABLE)
-    is_published = models.BooleanField(default=True)
-    views_counter = models.PositiveIntegerField(
-        default=0,
-        verbose_name='Счетчик просмотров'
-    )
-
-    def __str__(self):
-        return self.title
-
-    class Meta:
-        verbose_name = 'пост'
-        verbose_name_plural = 'посты'
