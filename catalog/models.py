@@ -29,8 +29,8 @@ class Product(models.Model):
         Category, on_delete=models.SET_NULL, **NULLABLE, related_name="products"
     )
     price = models.IntegerField(null=False, verbose_name="Цена продукта")
-    created_at = models.DateField(**NULLABLE)
-    updated_at = models.DateField(**NULLABLE)
+    created_at = models.DateField(**NULLABLE, auto_now_add=True)
+    updated_at = models.DateField(**NULLABLE, auto_now_add=True)
     views_counter = models.PositiveIntegerField(
         default=0,
         verbose_name='Счетчик просмотров'
