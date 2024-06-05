@@ -9,10 +9,10 @@ from blog.models import Blog
 class BlogListView(ListView):
     model = Blog
 
-    def get_queryset(self, *args, **kwargs):
-        queryset = super().get_queryset()
-        queryset = queryset.filter(is_published=True)
-        return queryset
+    # def get_queryset(self, *args, **kwargs):
+    #     queryset = super().get_queryset()
+    #     queryset = queryset.filter(is_published=True)
+    #     return queryset
 
 
 class BlogDetailView(DetailView):
@@ -64,7 +64,7 @@ def toggle_activity(request, pk):
     if post_item.is_published:
         post_item.is_published = False
     else:
-        post_item = True
+        post_item.is_published= True
 
     post_item.save()
     return redirect(reverse('blog:list'))

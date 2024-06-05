@@ -16,7 +16,7 @@
                             <div class="btn-group">
                                <a class="btn btn-primary" href="{% url 'catalog:products_list' %}" role="button">Назад</a>
                             </div>
-                            <small class="text-body-secondary">товаров продано > 100000</small>
+                            <small class="text-body-secondary">{{ object.views_counter }}</small>
                         </div>
                     </div>
                 </div>

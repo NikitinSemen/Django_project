@@ -55,3 +55,6 @@ class Version(models.Model):
     class Meta:
         verbose_name = 'Версия'
         verbose_name_plural = 'Версии'
+
+    def __str__(self):
+        return f'{self.name_version}'

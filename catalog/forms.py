@@ -24,6 +24,7 @@ class ProductForm(StyleFormMixin, ModelForm):
         bad_word = ['казино', 'криптовалюта', 'крипта', 'биржа', 'дешево', 'бесплатно', 'обман', 'полиция', 'радар']
         if name.lower() in bad_word:
             raise ValidationError('Недопустимые слова в названии')
+        return name
 
 
 class VersionForm(StyleFormMixin, ModelForm):
