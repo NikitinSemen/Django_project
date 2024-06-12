@@ -1,7 +1,660 @@
 [
   {
-    "model": "catalog.category",
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-05-19T06:16:48.314Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Coca-cola",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-05-19T07:32:13.508Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "coca cola",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-05-19T07:41:11.534Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "Hersun",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-05-19T07:41:11.538Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "25",
+      "object_repr": "LG 219d285",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-05-19T07:41:11.540Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "Творог обезжиреный",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-05-19T07:42:40.597Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "Телевизор",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-05-19T07:43:11.044Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "Творожок",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-05-19T07:44:02.845Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "Кока - Кола",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-05-19T07:44:42.660Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "Холодильник",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
     "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Продукт",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Продукт",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Продукт",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Продукт",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add пост",
+      "content_type": 9,
+      "codename": "add_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change пост",
+      "content_type": 9,
+      "codename": "change_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete пост",
+      "content_type": 9,
+      "codename": "delete_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view пост",
+      "content_type": 9,
+      "codename": "view_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add пост",
+      "content_type": 10,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change пост",
+      "content_type": 10,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete пост",
+      "content_type": 10,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view пост",
+      "content_type": 10,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Версия",
+      "content_type": 11,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Версия",
+      "content_type": 11,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Версия",
+      "content_type": 11,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Версия",
+      "content_type": 11,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$DfqSLrJlqOmUjPKTBiyDOq$kBrD6WN/I01VsoykpywuXR99sQ+f3LppotxRFZeC/kI=",
+      "last_login": "2024-05-16T10:17:37.040Z",
+      "is_superuser": true,
+      "username": "webcam",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-05-16T10:17:16.582Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$R30YjOVbsqGLcIm2giaZPf$8IcYjsmIDdaAIXrEeJszP5PqFX2EFL0uLWHc97ckR08=",
+      "last_login": "2024-06-04T18:58:38.989Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-04T18:58:33.675Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "catalog",
+      "model": "blogpost"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "blog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "catalog",
+      "model": "version"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4yv1s7jlaar08498s9emvfzkki6v7eda",
+    "fields": {
+      "session_data": ".eJxVjDkOwjAUBe_iGllevgOhpOcM1t-CA8iR4qRC3B0ipYD2zcx7mYzrUvLadM6jmLPx5vC7EfJD6wbkjvU2WZ7qMo9kN8XutNnrJPq87O7fQcFWvjXw4PsETAwBk_KR8URMLkRxOkAkBx1iH0RBu-ApKjB7QE0xBkpi3h8JpzjJ:1s7YB7:TISnzNQQog88VRpce1iLj5xLyRM7egLi2l3d1d2bpgg",
+      "expire_date": "2024-05-30T10:17:37.041Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xiqno4buv6mbzmjc7h9itjjvdr8pr95i",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSGUNy7d-w1kYBipGkhKuzL-uzbpQrf3nHNfLMK21riNssQZ2ZlJdvrdEuRHaTvAO7Rb57m3dZkT3xV-0MGvHcvzcrh_BxVG_dbCGafJ2ARBy2BksYrAKu-Sm4RHtAGFgERAmQzZKQnnFQYq6LTFDOz9AdRSOEY:1sEZMk:VVGQn4ySM_nnIkL8ABl_p8-uLIXsoxt3tgx5gm0Wr3A",
+      "expire_date": "2024-06-18T18:58:38.991Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 38,
     "fields": {
       "name": "Продовольственные товары",
       "description": "кисломолчка, бакалея, мясные полуфабрикаты"
@@ -9,7 +662,7 @@
   },
   {
     "model": "catalog.category",
-    "pk": 24,
+    "pk": 39,
     "fields": {
       "name": "электроника",
       "description": "телевизоры, приставки, комплектующие"
@@ -17,7 +670,7 @@
   },
   {
     "model": "catalog.category",
-    "pk": 25,
+    "pk": 40,
     "fields": {
       "name": "Холодильное оборудование",
       "description": "морозильные камеры, бытовые холодильники"
@@ -25,41 +678,199 @@
   },
   {
     "model": "catalog.product",
-    "pk": 7,
+    "pk": 27,
     "fields": {
-      "name": "Творог обезжиреный",
-      "description": "Творог жирностью 0.5%",
-      "preview": "",
-      "category": 23,
-      "price": 120,
-      "created_at": null,
-      "updated_at": null
+      "name": "Телевизор",
+      "description": "81 дюйм, дополнительная подсветка, 100000000000цветов а может и больше",
+      "preview": "product/телик.jpg",
+      "category": 39,
+      "price": 15000,
+      "created_at": "2024-05-19",
+      "updated_at": "2024-05-19",
+      "views_counter": 6,
+      "slug": null
     }
   },
   {
     "model": "catalog.product",
-    "pk": 8,
+    "pk": 28,
     "fields": {
-      "name": "LG 219d285",
-      "description": "Диагональ 81см, блютуз поддержка, подключение к wifi",
-      "preview": "",
-      "category": 24,
-      "price": 21000,
-      "created_at": null,
-      "updated_at": null
+      "name": "Творожок",
+      "description": "Вкусный, не очень жирный и приятный",
+      "preview": "product/творожок_Lb6iOwh.webp",
+      "category": 38,
+      "price": 110,
+      "created_at": "2024-05-19",
+      "updated_at": "2024-05-19",
+      "views_counter": 9,
+      "slug": null
     }
   },
   {
     "model": "catalog.product",
-    "pk": 9,
+    "pk": 29,
     "fields": {
-      "name": "Hersun",
-      "description": "Морозильник вместительный, серого цвета, оснащен четырьмя полками",
-      "preview": "",
-      "category": 25,
-      "price": 7000,
-      "created_at": null,
-      "updated_at": null
+      "name": "Кока - Кола",
+      "description": "Классический вкус, новая упаковка.",
+      "preview": "product/Кола.jpg",
+      "category": 38,
+      "price": 14,
+      "created_at": "2024-05-19",
+      "updated_at": "2024-05-19",
+      "views_counter": 28,
+      "slug": "koka-kola"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 30,
+    "fields": {
+      "name": "Холодильник",
+      "description": "Двухкамерный класс экономичности А+",
+      "preview": "product/холодильник_JPjc7f0.jpg",
+      "category": 40,
+      "price": 150000,
+      "created_at": "2024-05-19",
+      "updated_at": "2024-05-19",
+      "views_counter": 1,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 29,
+      "number_version": 2,
+      "name_version": "Иранская кола",
+      "is_active_version": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 28,
+      "number_version": 5,
+      "name_version": "Чешский творожок",
+      "is_active_version": false
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 11,
+    "fields": {
+      "title": "cheese",
+      "slug": null,
+      "content": "cheese",
+      "photo": "",
+      "created_at": "2024-05-28",
+      "is_published": true,
+      "views_counter": 9
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 12,
+    "fields": {
+      "title": "ыв",
+      "slug": null,
+      "content": "ыв",
+      "photo": "",
+      "created_at": "2024-05-28",
+      "is_published": true,
+      "views_counter": 9
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 13,
+    "fields": {
+      "title": "фыв",
+      "slug": "fyiv",
+      "content": "фы",
+      "photo": "",
+      "created_at": "2024-05-28",
+      "is_published": true,
+      "views_counter": 8
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 14,
+    "fields": {
+      "title": "asdsdad",
+      "slug": "asdsdad",
+      "content": "asdadad",
+      "photo": "",
+      "created_at": "2024-05-28",
+      "is_published": false,
+      "views_counter": 6
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 15,
+    "fields": {
+      "title": "asdas",
+      "slug": "asdas",
+      "content": "asdasd",
+      "photo": "",
+      "created_at": "2024-05-28",
+      "is_published": false,
+      "views_counter": 0
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 16,
+    "fields": {
+      "title": "О здоровом питании",
+      "slug": "o-zdorovom-pitanii",
+      "content": "Здоровое питание это хорошо",
+      "photo": "",
+      "created_at": "2024-05-29",
+      "is_published": false,
+      "views_counter": 3
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 17,
+    "fields": {
+      "title": "фыв",
+      "slug": "fyiv",
+      "content": "фывфыв",
+      "photo": "",
+      "created_at": "2024-05-29",
+      "is_published": false,
+      "views_counter": 11
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 18,
+    "fields": {
+      "title": "фывфы",
+      "slug": "fyivfyi",
+      "content": "фывфыв",
+      "photo": "blog/images_1.jpeg",
+      "created_at": "2024-05-30",
+      "is_published": false,
+      "views_counter": 6
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 19,
+    "fields": {
+      "title": "Статья о пользе бобовых",
+      "slug": "statya-o-polze-bobovyih",
+      "content": "Бобовые полезны за счет содержания большого количества белка и полиненасыщенных жиров",
+      "photo": "blog/images_2.jpeg",
+      "created_at": "2024-05-31",
+      "is_published": false,
+      "views_counter": 3
     }
   }
 ]
