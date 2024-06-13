@@ -11,7 +11,14 @@
                 <h4>Меню</h4>
                 <ul class="list-unstyled">
                     <li><a href="{% url 'catalog:products_list' %}" class="text-white">Главная</a></li>
+
+                    {% if user.is_authenticated %}
                     <li><a href="{% url 'catalog:product_create' %}" class="text-white">Добавить продукт в каталог</a>
+                    <li><a href="{% url 'users:logout' %}" class="text-white">выход</a>
+                        {% else %}
+                    <li><a href="{% url 'users:login' %}" class="text-white">вход</a>
+                    <li><a href="{% url 'users:register' %}" class="text-white">регистрация</a>
+                        {% endif %}
                     <li><a href="{% url 'blog:list' %}" class="text-white">Блог</a>
                 </ul>
             </div>

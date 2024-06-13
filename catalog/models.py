@@ -1,5 +1,7 @@
 from django.db import models
 
+from users.models import User
+
 NULLABLE = {"blank": True, "null": True}
 
 
@@ -36,6 +38,8 @@ class Product(models.Model):
         verbose_name='Счетчик просмотров'
     )
     slug = models.CharField(max_length=150, verbose_name='slug', **NULLABLE)
+    owner = models.ForeignKey(User, verbose_name='Продавец', help_text='введите продавца товара', **NULLABLE,
+                              on_delete=models.SET_NULL, to_field='email')
 
     class Meta:
         verbose_name = "Продукт"
