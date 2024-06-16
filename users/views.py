@@ -1,9 +1,9 @@
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 import secrets
-from users.forms import UserRegisterForm
+from users.forms import UserRegisterForm, UserPassForm
 from users.models import User
 from config.settings import EMAIL_HOST_USER
 
@@ -35,3 +35,10 @@ def email_verification(request, token):
     user.is_active = True
     user.save()
     return redirect(reverse('users:login'))
+
+
+class ChangeView(UpdateView):
+    model = User
+    form_class = UserPassForm
+    template_name = 'user_change.html'
+    success_url = reverse_lazy('users:change')
