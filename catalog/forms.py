@@ -27,6 +27,12 @@ class ProductForm(StyleFormMixin, ModelForm):
         return name
 
 
+class ProductModeratorForm(StyleFormMixin, ModelForm):
+    class Meta:
+        model = Product
+        fields = ('description', 'category', 'is_active')
+
+
 class VersionForm(StyleFormMixin, ModelForm):
     class Meta:
         model = Version

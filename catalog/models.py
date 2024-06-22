@@ -37,6 +37,7 @@ class Product(models.Model):
         default=0,
         verbose_name='Счетчик просмотров'
     )
+    is_active = models.BooleanField(verbose_name='активен', default=False)
     slug = models.CharField(max_length=150, verbose_name='slug', **NULLABLE)
     owner = models.ForeignKey(User, verbose_name='Продавец', help_text='введите продавца товара', **NULLABLE,
                               on_delete=models.SET_NULL, to_field='email')
@@ -45,6 +46,11 @@ class Product(models.Model):
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
         ordering = ["name", "price"]
+        permissions = [
+            ('can_edit_category', 'Can edit category'),
+            ('can_edit_description', 'Can edit description'),
+            ('set_active_status', 'Can change is_active')
+        ]
 
     def __str__(self):
         return self.name
