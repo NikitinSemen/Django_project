@@ -1,9 +1,11 @@
+import string
+
 from django.core.mail import send_mail
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse_lazy, reverse
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 import secrets
-from users.forms import UserRegisterForm
+from users.forms import UserRegisterForm, UserPassForm
 from users.models import User
 from config.settings import EMAIL_HOST_USER
 
@@ -35,3 +37,44 @@ def email_verification(request, token):
     user.is_active = True
     user.save()
     return redirect(reverse('users:login'))
+
+
+def password_recovery(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+
+        print(f'Получен адрес {email}')
+
+        user = get_object_or_404(User, email=email)
+
+        print(f'Пользователь {user}')
+
+        password = ''
+
+        alphabet = string.ascii_letters + string.digits
+        while True:
+            password = ''.join(secrets.choice(alphabet) for i in range(12))
+            if (any(c.islower() for c in password)
+                    and any(c.isupper() for c in password)
+                    and sum(c.isdigit() for c in password) >= 3):
+                break
+
+        print(f'Пароль {password}')
+
+        message = f"Привет, держи новый сложный 12-ти символьный пароль, который ты тоже забудешь: {password}. \
+                    Если вы не запрашивали восстановление пароля, просто игнорируйте это сообщение."
+
+        print(f'Пароль {message}')
+
+        send_mail(
+            subject='Восстановление пароля',
+            message=message,
+            from_email=EMAIL_HOST_USER,
+            recipient_list=[email]
+        )
+
+        user.set_password(password)
+        user.save()
+        return redirect(reverse('users:login'))
+
+    return render(request, 'users/password_recovery.html')
