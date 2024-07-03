@@ -7,10 +7,14 @@ from pytils.translit import slugify
 
 from catalog.forms import ProductForm, VersionForm, ProductModeratorForm
 from catalog.models import Product, Version
+from catalog.services import get_products_from_cache
 
 
 class ProductListView(ListView):
     model = Product
+
+    def get_queryset(self):
+        return get_products_from_cache()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -96,7 +100,7 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
             return ProductForm
         if user.has_perm('catalog.can_edit_category') and user.has_perm(
                 'catalog.can_edit_description') and user.has_perm(
-                'catalog.set_active_status'):
+            'catalog.set_active_status'):
             return ProductModeratorForm
         raise PermissionDenied
 
